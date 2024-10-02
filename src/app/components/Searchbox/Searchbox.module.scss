@@ -1,0 +1,150 @@
+.main_container{
+	height: 9rem;
+	width: 100%;
+	padding: 35px;
+	font-family: sans-serif;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 15px;
+	background-color: #FFFFFF;
+	box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.2);
+	gap: 16px;
+}
+.search_input{
+	width: 20%;
+	border: 1px solid #dce0e0;
+	height: 3.5rem;
+	border-radius: 12px;
+	color: #222222;
+	padding: 10px;
+	font-size: 19px;
+	line-height: 1.6;
+	outline: 0;
+}
+.search_input:focus{
+	border-color: #fbba00;
+}
+.search_input_date{
+	height: 3rem;
+	width: 20%;
+	border: 1px solid #dce0e0;
+	border-radius: 12px;
+	color: #222222;
+	padding: 10px;
+	font-size: 16px;
+	line-height: 1.6;
+	outline: 0;
+	zoom: 1.2;
+}
+.search_input_date:focus{
+	border-color: #fbba00;
+}
+.dropdown{
+    width: 20%;
+    height: 3.5rem;
+    padding: 12px;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 1.6;
+	text-transform: none;
+    border: 1px solid #dce0e0;
+    border-radius: 14px;
+    appearance: none;
+    background-image: linear-gradient(45deg, transparent 50%, #3934349c 50%), linear-gradient(135deg, rgba(33, 27, 27, 0.5019607843) 50%, transparent 50%), linear-gradient(to right, #ccc, #ccc);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 20px) calc(1em + 4px), calc(100% - 15px) calc(1em + 4px), calc(100% - 2.5em) .9em;
+    background-size: 5px 5px, 5px 5px, 1px 1em;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+.search_btn{
+	height: 3.5rem;
+	width: 20%;
+	background-color: #fbba00;
+	border-radius: 14px;
+	padding: 16px;
+	text-align: center;
+	font-size: 19px;
+	font-weight: bold;
+	cursor: pointer;
+	&:hover{
+		background-color: black;
+		color: white;
+	}
+}
+@media screen and (max-width : 1280px) {
+	.main_container{
+		height: 7rem;
+	}
+	.search_input{
+		font-size: 15px;
+		height: 3rem;
+	}
+	.dropdown{
+		font-size: 15px;
+		height: 3rem;
+	}
+	.search_input_date{
+		height: 2.5rem;
+		font-size: 13px;
+	}
+	.search_btn{
+		font-size: 15px;
+		height: 3rem;
+		padding: 11px;
+	}
+}
+@media screen and (max-width : 912px) {
+	.main_container{
+		height: 7rem;
+	}
+	.search_input{
+		font-size: 15px;
+		height: 46px;
+	}
+	.dropdown{
+		font-size: 15px;
+		height: 46px;
+	}
+	.search_btn{
+		font-size: 15px;
+		height: 46px;
+		padding: 11px;
+	}
+	.search_input_date{
+		height: 39px;
+		font-size: 13px;
+	}
+}
+
+@media screen and (max-width : 800px) {
+	.main_container{
+		height: 24rem;
+		flex-direction: column;
+		padding: 30px;
+		justify-content: flex-start;
+	}
+	.search_input{
+		width: 100%;
+		font-size: 15px;
+		padding: 10px;
+		border-radius: 10px;
+	}
+	.dropdown{
+		width: 100%;
+		font-size: 15px;
+		border-radius: 10px;
+	}
+	.search_btn{
+		width: 100%;
+		padding: 10px;
+		font-size: 17px;
+		border-radius: 10px;
+	}
+	.search_input_date{
+		width: 100%;
+		font-size: 14px;
+	}
+}

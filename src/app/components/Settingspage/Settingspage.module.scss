@@ -1,0 +1,92 @@
+.main_container{
+	position: fixed;
+    width: 30vh;
+    height: 100vh;
+    right: 0;
+    z-index: 1;
+    //animation: slideInRight 0.5s ease forwards;
+    .sub_container{
+    	position: absolute;
+	    height: 100vh;
+	    width: 30vw;
+	    right: 0;
+	    background-color: #FFFFFF;
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: flex-start;
+	    align-items: center;
+	    padding: 25px;
+	    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+	    overflow: auto;
+	    gap: 30px;
+	    .purchase_div{
+	    	height: 9vh;
+	    	width: 100%;
+	    	border-radius: 8px;
+	    	display: flex;
+	    	justify-content: center;
+	    	align-items: center;
+	    	background-color: #82B440;
+	    	padding: 20px;
+	    	cursor: pointer;
+	    	.purchase_text{
+	    		font-size: 100%;
+	    		color: white;
+	    		font-weight: bold;
+	    	}
+	    }
+	    .sub_text_box{
+	    	height: fit-content;
+	    	display: flex;
+	    	flex-direction: column;
+	    	justify-content: space-between;
+	    	align-items: center;
+	    	color: black;
+	    	gap: 16px;
+	    	.sub_text{
+	    		font-size: 20px;
+	    		font-weight: bold;
+	    		letter-spacing: 0px;
+	    	}
+	    	.description{
+	    		text-align: center;
+	    		line-height: 30px;
+	    	}
+	    }
+	    .grid_box{
+	    	width: 100%;
+	        display: grid;
+	        grid-template-columns: repeat(2, 1fr);
+	        gap: 20px;
+	        .card_wrapper {
+	            position: relative;
+	            .card{
+	                position: relative;
+	                height: 100%;
+	                width: 100%;
+	                border-radius: 8px;
+	                background-image: linear-gradient(180deg, #00000000 0%, #000000 100%);
+	            }
+	            .card_name{
+	                position: absolute;
+	                bottom: 15px;
+	                left: 25px;
+	                font-size: 36px;
+	                font-weight: bold;
+	                color: white;
+	            }
+	        }
+	    }
+    }
+}
+
+@keyframes slideInRight {
+	0% {
+	    transform: translateX(100%);
+	    opacity: 0;
+	}
+ 	100% {
+	    transform: translateX(0);
+	    opacity: 1;
+  	}
+}

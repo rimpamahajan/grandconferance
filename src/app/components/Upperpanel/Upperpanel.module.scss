@@ -1,0 +1,131 @@
+.image_container{
+    height: 62.3rem;
+    width: 100%;
+    background-color: #F0F0F0;
+    background: linear-gradient(rgb(0 0 0 / 36%), rgba(0, 0, 0, 0)), url("https://grandconferencev5-2.themegoods.com/city-events/wp-content/uploads/sites/3/2024/01/famous-venetian-basilica-2023-11-27-05-13-52-utc.jpg");
+    background-position: 50% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    //border-radius: 0 0 0 22%;
+    clip-path: ellipse(109% 95% at 42% 4%);
+}    
+.inner_container{
+    margin: 0 4%;
+    height: 48rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}    
+.header_wraper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+}
+.header{
+    color: #FFFFFF;
+    font-family: Sans-serif;
+    font-size: 82px;
+    font-weight: 700;
+    line-height: 1.1em;
+    width: 40rem;
+    text-align: center;
+}
+@media screen and (max-width : 1280px){
+    .image_container{
+        height: 48rem;
+    }
+    .inner_container{
+        height: 34rem;
+    }
+    .header{
+        font-size: 58px;
+    }
+}
+
+@media screen and (max-width : 1170px) {
+    .header{
+        font-size: 67px;
+    }
+}
+@media screen and (max-width : 912px) {
+    .image_container{
+        height: 45rem;
+    }
+    .inner_container{
+        height: 40rem;
+        justify-content: flex-start;
+    }
+    .header_wraper{
+        margin-top: 11rem;
+    }
+    .header{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width : 800px) {
+    .image_container{
+        height: 60rem;
+    }
+    .inner_container{
+        margin: 0 2rem;
+        height: 43rem;
+        justify-content: flex-start;
+    }
+    .header_wraper{
+        width: 80%;
+        margin-top: 12rem;
+    }
+    .header{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width : 750px) {
+    .image_container{
+        height: 44rem;
+    }    
+    .inner_container{
+        margin: 0 4%;
+        height: fit-content;
+    }
+    .header_wraper{
+        margin-top: 3rem;
+        gap: 38px;
+    }
+    .header{
+        width: fit-content;
+        font-size: 40px;
+    }
+}
+@media screen and (max-width : 720px) {
+    .image_container{
+        height: 47rem;
+    }
+}
+@media screen and (max-width : 599px) {
+    .image_container{
+        height: 48rem;
+    }    
+    .inner_container{
+        margin: 0 4%;
+        height: fit-content;
+    }
+    .header_wraper{
+        margin-top: 3rem;
+        gap: 38px;
+    }
+    .header{
+        width: fit-content;
+        font-size: 38px;
+    }
+}
+@media screen and (max-width : 400px) {
+    .header{
+        font-size: 35px;
+    }
+}

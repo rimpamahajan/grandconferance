@@ -1,0 +1,166 @@
+.main_container{
+	position: relative;
+	height: 6rem;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 19px;
+	font-weight: bold;
+	z-index: 1;
+}
+.wrapper{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	gap: 5rem;
+}
+.logo{
+	height: 4rem;
+	width: 11rem;
+}
+.menu_div{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 44px;
+	list-style-type: none;
+	color: #F9FBFC;
+    font-style: inherit;
+    font-family: inherit;
+	cursor: pointer;
+}
+.menu_div > div {
+  	position: relative;
+  	cursor: pointer;
+  	padding: 0 5px 2px;
+  	left: 0;
+  	bottom: 0;
+}
+.menu_div > div::before {
+  	content: '';
+  	position: absolute;
+  	height: 14px;
+  	background-color: #fbba009e;
+  	left: 0;
+  	bottom: 0;
+}
+.menu_div > div:hover::before {
+  	width: 100%;
+  	animation: slideIn 0.3s ease forwards;
+}
+.create_event_box{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+}
+.create_event_btn{
+	width: 12rem;
+	border-radius: 5px;
+	padding: 16px 32px;
+	font-family: Sans-serif;
+	cursor: pointer;
+	background-color: #FBBA00;
+	fill: #222222;
+	color: #222222;
+	text-align: center;
+	&:hover{
+		background-color: black;
+		fill: white;
+		color: white;
+	}
+}
+.menu_icon{
+	display: none;
+	color: white;
+	height: 30px;
+	width: 30px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+@keyframes slideIn {
+  	from {
+    	width: 0;
+  	}
+  	to {
+    	width: 100%;
+  	}
+}
+@media screen and (max-width : 1280px){
+	.menu_div{
+		gap: 20px;
+		font-size: 16px;
+	}
+	.create_event_btn{
+		width: 9rem;
+		padding: 12px 3px;
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width : 1170px) {
+	.menu_div{
+    	display: none;
+    }
+    .create_event_box{
+    	gap: 20px;
+    }
+    .create_event_btn{
+    	width: 9rem;
+    	padding: 10px 3px;
+    	font-size: 16px;
+    }
+    .menu_icon{
+    	display: block;
+    	height: 26px;
+		width: 26px;
+    }
+}
+
+@media screen and (max-width : 800px) {
+	.main_container{
+        padding: 5% 4%;
+    }
+	.menu_div{
+    	display: none;
+    }
+    .create_event_box{
+    	gap: 20px;
+    }
+    .create_event_btn{
+    	width: 9rem;
+    	padding: 10px 3px;
+    	font-size: 16px;
+    }
+    .menu_icon{
+    	display: block;
+    	height: 26px;
+    	width: 26px;
+    }
+}
+@media screen and (max-width : 750px) {
+	.create_event_btn{
+    	display: none;
+    }
+}
+@media screen and (max-width : 640px) {
+	.create_event_btn{
+    	display: none;
+    }
+    .main_container{
+        padding: 9% 4%;
+    }
+}
+@media screen and (max-width : 600px) {
+	.create_event_btn{
+    	display: none;
+    }
+    .main_container{
+        padding: 10% 4%;
+    }
+}
